@@ -7,6 +7,12 @@ Script inteligente para registrar el sueldo.
 """
 
 import sys
+import os
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(script_dir)
+sys.path.insert(0, project_root)
+
 from datetime import datetime
 import gnucash
 from gnucash.gnucash_core import gnc_numeric_from_string, SessionOpenMode

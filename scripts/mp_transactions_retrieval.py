@@ -9,8 +9,7 @@ COOKIE_STRING = input(
 )
 
 # 2. Pide el token CSRF.
-CSRF_TOKEN = input(
-    "🛡️  Pega aquí el valor de la cabecera 'x-csrf-token' y presiona Enter:\n"
+CSRF_TOKEN = input( "🛡️  Pega aquí el valor de la cabecera 'x-csrf-token' y presiona Enter:\n"
 )
 
 if not COOKIE_STRING.strip() or not CSRF_TOKEN.strip():
